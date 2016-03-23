@@ -1,0 +1,46 @@
+
+
+ .svg-icon svg {
+   display:block;
+   margin: auto;
+   margin-top: 10%;
+ }
+
+.shiny:hover {
+  fill: #efdb22;
+  stroke-width: 5px;
+}
+
+.shiny {
+  transition: .3s ease-out;
+  stroke: #4D4D4D;
+}
+
+.body {
+  /*transition: transform .4s ease-out;*/
+  animation: bulb-animation 1s ease-out backwards;
+  transform-origin: 50% 50%;
+}
+
+/*.bulb:hover .body {
+  transform: scale(1.1);
+}*/
+
+
+
+.beam {
+  fill:#efdb22;
+  animation: shine 1s ease-out backwards;
+  animation-delay: 1.5s;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shine {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.5); }
+}
+
+@keyframes bulb-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
